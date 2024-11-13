@@ -1,0 +1,175 @@
+.App {
+  display: flex;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+
+}
+
+.sidebar {
+  width: 30%;
+}
+
+.hotel-cards {
+  width: 100%;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.filters-container {
+  flex: 1;
+  min-width: 250px;
+}
+.hotel-cards-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sorting {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.stars-filter{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.country,
+.type,
+.reviews,
+.price{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.reviews{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sorting select {
+  padding: 5px;
+  font-size: 16px;
+}
+.price-range {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.hotel-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.hotel-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hotel-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.hotel-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.hotel-name {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hotel-stars {
+  font-size: 1.2em;
+  color: #FFD700; 
+}
+
+.hotel-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+
+.hotel-info > div {
+  flex: 1 1 45%;
+}
+
+.hotel-price {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+.hotel-description {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
